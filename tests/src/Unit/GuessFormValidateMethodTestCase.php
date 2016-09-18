@@ -37,14 +37,14 @@ class GuessFormValidateMethodTestCase extends FormValidationUnitTestCase
     return ['getQuestionSelectionList', 'getAnswerToQuestion'];
   }
   
-    public function testFormValidationNoErrorThrownForCorrectInput() {
-      $form_element_names_and_input_values = [
-        GuessForm::select_list_key => GuessForm::favorite_aircraft_make_key,
-        GuessForm::text_field_key => 'Cessna'      
-      ];
-  
-      $this->assertFormElementDoesNotCausesErrorMessageWithValidFormInput($form_element_names_and_input_values);
-    }
+  public function testFormValidationNoErrorThrownForCorrectInput() {
+    $form_element_names_and_input_values = [
+      GuessForm::select_list_key => GuessForm::favorite_aircraft_make_key,
+      GuessForm::text_field_key => 'Cessna'      
+    ];
+
+    $this->assertFormElementDoesNotCausesErrorMessageWithValidFormInput($form_element_names_and_input_values);
+  }
   
   public function testFormValidationNoAnswerGiven() {
     $form_element_names_and_input_values = [

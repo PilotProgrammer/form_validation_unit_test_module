@@ -90,7 +90,7 @@ class GuessForm extends FormBase
     if ($entered_answer_value == GuessForm::text_field_default_value)
       $form_state->setErrorByName(GuessForm::text_field_key, "You should remove the default guess and enter your own.");
     
-    if ($entered_answer_value != $correct_answer_to_selected_question) // correct
+    if ($entered_answer_value != $correct_answer_to_selected_question)
     {
       $entered_answer_is_correct_for_a_question_other_than_what_was_selected = false;
       $question_selection_list = $this->getQuestionSelectionList();
