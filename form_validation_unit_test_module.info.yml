@@ -1,0 +1,5 @@
+name: form_validation_unit_test_module
+type: module
+description: 'This module demonstrates unit testing a Drupal form validation method with PHPUnit'
+package: PilotProgrammer
+core: '8.x'

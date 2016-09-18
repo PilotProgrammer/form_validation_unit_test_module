@@ -1,0 +1,8 @@
+# phpunit_example only has one route. It is to a page explaining
+# the module.
+form_validation_unit_test_module:
+  path: 'form_validation_unit_test_module'
+  defaults:
+    _form: '\Drupal\form_validation_unit_test_module\Form\GuessForm'
+  requirements:
+    _permission: 'access content'
