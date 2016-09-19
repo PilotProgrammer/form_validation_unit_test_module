@@ -39,7 +39,9 @@ abstract class FormValidationUnitTestCase extends UnitTestCase
 
     // 1
 //      this doesn't work and must do getInvcation technique instead, because setErrorByName also called for other invalid input. 
-//    $form_state->expects($form_state_set_error_by_name_spy = $this->any())
+//    $form_state->expects($form_state_set_error_by_name_spy = $this->once()) // nope 
+//    $form_state->expects($form_state_set_error_by_name_spy = $this->exactly(1)) // don't think so
+//    $form_state->expects($form_state_set_error_by_name_spy = $this->atLeastOnce()) // sorry, no luck
 //      ->method('setErrorByName')
 //      ->with($name_of_form_element_generating_error, $expected_error_message);
 
